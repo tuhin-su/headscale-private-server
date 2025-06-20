@@ -5,8 +5,8 @@ services:
     volumes:
       - ./config:/etc/headscale/
       - headscale:/var/lib/headscale
-    ports:
-      - "27896:8080"
+    # ports:
+    #   - "27896:8080"
     command: headscale serve
     restart: unless-stopped
 

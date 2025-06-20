@@ -9,7 +9,14 @@ services:
     #   - "27896:8080"
     command: headscale serve
     restart: unless-stopped
+    networks:
+      cloudefire-network:
+        ipv4_address: 10.10.0.2
 
 volumes:
   headscale:
+    external: true
+
+networks:
+  cloudefire-network:
     external: true

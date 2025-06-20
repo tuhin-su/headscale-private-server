@@ -10,7 +10,7 @@
 #
 # https://myheadscale.example.com:443
 #
-server_url: https://headscale.yourdomain.com
+server_url: http://rootter-38223.portmap.io
 
 # Address to listen to / bind to on the server
 #
@@ -253,7 +253,7 @@ dns_config:
   # `base_domain` must be a FQDNs, without the trailing dot.
   # The FQDN of the hosts will be
   # `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_).
-  base_domain: headscale.example.com
+  base_domain: rootter-38223.portmap.io
 
 # Unix socket used for the CLI to connect without authentication
 # Note: for production you will want to set this to something like:
